@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOXYGEON | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #f9f9f9; margin: 0; }
+        header { background: #1a1a2e; color: #fff; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 2; }
+        nav { display: flex; justify-content: center; gap: 2rem; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; font-size: 1.1rem; }
+        nav a:hover { color: #e94560; }
+        .container { max-width: 600px; margin: 100px auto 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        h2 { text-align: center; margin-bottom: 2rem; }
+        .contact-details { margin-bottom: 2rem; }
+        .contact-details div { margin-bottom: 1rem; display: flex; align-items: center; }
+        .contact-details i { margin-right: 1rem; color: #e94560; font-size: 1.2rem; width: 20px; }
+        .contact-details span { color: #333; }
+        form .form-group { margin-bottom: 1.5rem; }
+        form input, form textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; }
+        form button { background: #e94560; color: #fff; border: none; padding: 12px 30px; border-radius: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; }
+        form button:hover { background: #0f3460; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <footer>
+        &copy; 2025 FOXYGEON. All rights reserved.
+    </footer>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-details" style="font-size:1.2rem; background:rgba(0,0,0,0.03); padding:1rem; border-radius:8px;">
+            <div><i class="fas fa-map-marker-alt"></i><span>123 Fashion Street, Style City, SC 12345</span></div>
+            <div><i class="fas fa-phone"></i><span>0608331697</span></div>
+            <div><i class="fas fa-envelope"></i><span>foxygeoncollections@gmail.com</span></div>
+            <div><i class="fas fa-clock"></i><span>Mon - Fri: 9am - 6pm</span></div>
+        </div>
+        <form id="inquiryForm">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
